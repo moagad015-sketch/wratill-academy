@@ -1,0 +1,303 @@
+<antml:writeToFile path="teachers.html">
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="انضم إلى فريق معلمين أكاديمية ورتل - فرصة للمعلمين والمعلمات للانضمام إلى أكاديمية متخصصة في تعليم القرآن">
+    <title>انضم كمعلم | أكاديمية ورتل</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="header-content">
+            <div class="logo-section">
+                <div class="logo">
+                    <i class="fas fa-quran logo-icon"></i>
+                    <div class="logo-text">
+                        <h1>أكاديمية ورتل</h1>
+                        <p class="supervision">تحت إشراف الشيخ محمد بن جاد</p>
+                    </div>
+                </div>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">عن الأكاديمية</a></li>
+                    <li><a href="programs.html">البرامج التعليمية</a></li>
+                    <li><a href="pricing.html">الباقات والأسعار</a></li>
+                    <li><a href="teachers.html" class="active">انضم كمعلم</a></li>
+                    <li><a href="login.html">تسجيل الدخول</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+        </div>
+    </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+    <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="about.html">عن الأكاديمية</a></li>
+        <li><a href="programs.html">البرامج التعليمية</a></li>
+        <li><a href="pricing.html">الباقات والأسعار</a></li>
+        <li><a href="teachers.html" class="active">انضم كمعلم</a></li>
+        <li><a href="login.html">تسجيل الدخول</a></li>
+    </ul>
+</div>
+
+<!-- Teachers Hero -->
+<section class="teachers-hero">
+    <div class="container">
+        <h1>انضم إلى فريقنا التعليمي</h1>
+        <p>نبحث عن معلمين ومعلمات متميزين للانضمام إلى أكاديمية ورتل لنشر علم القرآن</p>
+    </div>
+</section>
+
+<!-- Teachers Section -->
+<section class="teachers-section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge">انضم إلينا</span>
+            <h2 class="section-title">اختر نوع التسجيل</h2>
+            <p class="section-subtitle">املأ البيانات المطلوبة وسيتم التواصل معك عبر الواتساب</p>
+        </div>
+        
+        <div class="teachers-tabs">
+            <button class="teacher-tab active" data-target="male-form">
+                <i class="fas fa-male"></i> تسجيل المعلمين
+            </button>
+            <button class="teacher-tab" data-target="female-form">
+                <i class="fas fa-female"></i> تسجيل المعلمات
+            </button>
+        </div>
+        
+        <!-- Male Teacher Form -->
+        <div class="teacher-form-container active" id="male-form">
+            <div class="registration-form">
+                <h3><i class="fas fa-male"></i> تسجيل معلم</h3>
+                <p class="form-subtitle">املأ البيانات التالية للانضمام إلى فريق المعلمين</p>
+                <form id="teacherMaleForm">
+                    <div class="form-group">
+                        <label>الاسم الكامل <span class="required">*</span></label>
+                        <input type="text" id="tm-name" class="form-control" required placeholder="أدخل اسمك الكامل">
+                    </div>
+                    <div class="form-group">
+                        <label>العمر <span class="required">*</span></label>
+                        <input type="number" id="tm-age" class="form-control" required min="18" max="80" placeholder="أدخل عمرك">
+                    </div>
+                    <div class="form-group">
+                        <label>رقم التواصل (واتساب) <span class="required">*</span></label>
+                        <input type="tel" id="tm-phone" class="form-control" required placeholder="مثال: 01xxxxxxxxx">
+                    </div>
+                    <div class="form-group">
+                        <label>المؤهل العلمي <span class="required">*</span></label>
+                        <input type="text" id="tm-qualification" class="form-control" required placeholder="مثال: بكالوريوس علوم قرآن، أزهر...">
+                    </div>
+                    <div class="form-group">
+                        <label>هل حصلت على إجازة في القرآن؟ <span class="required">*</span></label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="tm-ijaza-yes" name="tm-ijaza" value="نعم، حاصل على إجازة" required>
+                                <label for="tm-ijaza-yes">نعم</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="tm-ijaza-no" name="tm-ijaza" value="لا، لم أحصل على إجازة" required>
+                                <label for="tm-ijaza-no">لا</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>هل عملت أونلاين من قبل؟ <span class="required">*</span></label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="tm-online-yes" name="tm-online" value="نعم، لدي خبرة سابقة" required>
+                                <label for="tm-online-yes">نعم</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="tm-online-no" name="tm-online" value="لا، لم أعمل أونلاين" required>
+                                <label for="tm-online-no">لا</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-submit">
+                        <i class="fab fa-whatsapp"></i>
+                        إرسال الطلب عبر الواتساب
+                    </button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Female Teacher Form -->
+        <div class="teacher-form-container" id="female-form">
+            <div class="registration-form">
+                <h3><i class="fas fa-female"></i> تسجيل معلمة</h3>
+                <p class="form-subtitle">املأ البيانات التالية للانضمام إلى فريق المعلمات</p>
+                <form id="teacherFemaleForm">
+                    <div class="form-group">
+                        <label>الاسم الكامل <span class="required">*</span></label>
+                        <input type="text" id="tf-name" class="form-control" required placeholder="أدخل اسمك الكامل">
+                    </div>
+                    <div class="form-group">
+                        <label>العمر <span class="required">*</span></label>
+                        <input type="number" id="tf-age" class="form-control" required min="18" max="80" placeholder="أدخل عمرك">
+                    </div>
+                    <div class="form-group">
+                        <label>رقم التواصل (واتساب) <span class="required">*</span></label>
+                        <input type="tel" id="tf-phone" class="form-control" required placeholder="مثال: 01xxxxxxxxx">
+                    </div>
+                    <div class="form-group">
+                        <label>المؤهل العلمي <span class="required">*</span></label>
+                        <input type="text" id="tf-qualification" class="form-control" required placeholder="مثال: بكالوريوس علوم قرآن، أزهر...">
+                    </div>
+                    <div class="form-group">
+                        <label>هل حصلتِ على إجازة في القرآن؟ <span class="required">*</span></label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="tf-ijaza-yes" name="tf-ijaza" value="نعم، حاصلة على إجازة" required>
+                                <label for="tf-ijaza-yes">نعم</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="tf-ijaza-no" name="tf-ijaza" value="لا، لم أحصل على إجازة" required>
+                                <label for="tf-ijaza-no">لا</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>هل عملتِ أونلاين من قبل؟ <span class="required">*</span></label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="tf-online-yes" name="tf-online" value="نعم، لدي خبرة سابقة" required>
+                                <label for="tf-online-yes">نعم</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="tf-online-no" name="tf-online" value="لا، لم أعمل أونلاين" required>
+                                <label for="tf-online-no">لا</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-submit">
+                        <i class="fab fa-whatsapp"></i>
+                        إرسال الطلب عبر الواتساب
+                    </button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Requirements -->
+        <div class="section-header" style="margin-top: 80px;">
+            <span class="section-badge">المتطلبات</span>
+            <h2 class="section-title">شروط الانضمام</h2>
+        </div>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-book-reader"></i>
+                </div>
+                <h3>حفظ القرآن</h3>
+                <p>أن يكون المتقدم حافظاً لكتاب الله كاملاً مع إتقان التجويد</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <h3>الإجازة</h3>
+                <p>الأفضلية للحاصلين على إجازة بالسند المتصل في القراءات</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <h3>الخبرة</h3>
+                <p>خبرة في تعليم القرآن الكريم، ويفضل الخبرة في التعليم أونلاين</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-laptop"></i>
+                </div>
+                <h3>التقنية</h3>
+                <p>القدرة على استخدام أدوات التعليم عن بُعد والإنترنت بشكل جيد</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h3>الالتزام</h3>
+                <p>الالتزام بالمواعيد والجدول المحدد مع الطلاب</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h3>الأخلاق</h3>
+                <p>التحلي بالأخلاق الحسنة والصبر مع الطلاب</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <i class="fas fa-quran"></i>
+                    <h3>أكاديمية ورتل</h3>
+                </div>
+                <p>منصة تعليمية رقمية متخصصة في علوم القرآن والقراءات تحت إشراف الشيخ محمد بن جاد</p>
+            </div>
+            <div class="footer-col">
+                <h4>روابط سريعة</h4>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">عن الأكاديمية</a></li>
+                    <li><a href="programs.html">البرامج التعليمية</a></li>
+                    <li><a href="pricing.html">الباقات والأسعار</a></li>
+                    <li><a href="teachers.html">انضم كمعلم</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>تواصل معنا</h4>
+                <ul class="contact-list">
+                    <li><i class="fab fa-whatsapp"></i><a href="https://wa.me/201515404370" target="_blank">01515404370</a></li>
+                    <li><i class="fab fa-facebook"></i><a href="https://www.facebook.com/share/1BrhBwDvJB/" target="_blank">فيسبوك</a></li>
+                    <li><i class="fab fa-instagram"></i><a href="https://www.instagram.com/moh.1592009?igsh=MTA0dWN1Z3JuOHJsNQ==" target="_blank">إنستجرام</a></li>
+                    <li><i class="fab fa-telegram"></i><a href="https://t.me/mohamedgad213" target="_blank">تليجرام</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>ساعات العمل</h4>
+                <p>متاحون على مدار الساعة لخدمتكم عبر الواتساب</p>
+                <div class="social-icons">
+                    <a href="https://wa.me/201515404370" target="_blank" class="social-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/share/1BrhBwDvJB/" target="_blank" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/moh.1592009?igsh=MTA0dWN1Z3JuOHJsNQ==" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://t.me/mohamedgad213" target="_blank" class="social-icon telegram"><i class="fab fa-telegram-plane"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 أكاديمية ورتل. جميع الحقوق محفوظة | تحت إشراف الشيخ محمد بن جاد</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/201515404370" target="_blank" class="whatsapp-float" title="تواصل معنا">
+    <i class="fab fa-whatsapp"></i>
+    <span class="pulse"></span>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
+</antml:writeToFile>

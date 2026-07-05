@@ -1,0 +1,368 @@
+<antml:writeToFile path="programs.html">
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="البرامج التعليمية في أكاديمية ورتل - إجازة القراءات، حفظ وتجويد، نور البيان، والبرنامج المكثف">
+    <title>البرامج التعليمية | أكاديمية ورتل</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="header-content">
+            <div class="logo-section">
+                <div class="logo">
+                    <i class="fas fa-quran logo-icon"></i>
+                    <div class="logo-text">
+                        <h1>أكاديمية ورتل</h1>
+                        <p class="supervision">تحت إشراف الشيخ محمد بن جاد</p>
+                    </div>
+                </div>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">عن الأكاديمية</a></li>
+                    <li><a href="programs.html" class="active">البرامج التعليمية</a></li>
+                    <li><a href="pricing.html">الباقات والأسعار</a></li>
+                    <li><a href="teachers.html">انضم كمعلم</a></li>
+                    <li><a href="login.html">تسجيل الدخول</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+        </div>
+    </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+    <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="about.html">عن الأكاديمية</a></li>
+        <li><a href="programs.html" class="active">البرامج التعليمية</a></li>
+        <li><a href="pricing.html">الباقات والأسعار</a></li>
+        <li><a href="teachers.html">انضم كمعلم</a></li>
+        <li><a href="login.html">تسجيل الدخول</a></li>
+    </ul>
+</div>
+
+<!-- Programs Hero -->
+<section class="programs-hero">
+    <div class="container">
+        <h1>البرامج التعليمية</h1>
+        <p>اختر البرنامج المناسب لك وابدأ رحلتك مع كتاب الله تعالى</p>
+    </div>
+</section>
+
+<!-- Program 1: Qirat -->
+<section class="program-section" id="qirat">
+    <div class="container">
+        <div class="program-details">
+            <div class="program-info">
+                <h2><i class="fas fa-book-quran"></i> برنامج إجازة القراءات</h2>
+                <p>
+                    برنامج متخصص في حفظ القراءات القرآنية العشر الصغرى والكبرى مع الحصول على إجازة بالسند المتصل إلى رسول الله ﷺ. يقدم البرنامج نخبة من الحفاظ والمجازين ذوي الخبرة الواسعة في تعليم القراءات.
+                </p>
+                <ul class="program-features">
+                    <li>حفظ القراءات العشر كاملة أو ما تيسر منها</li>
+                    <li>الإجازة بالسند المتصل إلى رسول الله ﷺ</li>
+                    <li>معلمون حفاظ مجازون ذوو خبرة</li>
+                    <li>مرونة في المواعيد تناسب جميع الأوقات</li>
+                    <li>منهج علمي متدرج يناسب جميع المستويات</li>
+                    <li>اختبارات دورية لقياس التقدم</li>
+                </ul>
+            </div>
+            
+            <!-- Registration Form -->
+            <div class="registration-form">
+                <h3>سجل في برنامج إجازة القراءات</h3>
+                <p class="form-subtitle">املأ البيانات وسيتم التواصل معك عبر الواتساب</p>
+                <form id="qiratForm">
+                    <div class="form-group">
+                        <label>الاسم الكامل <span class="required">*</span></label>
+                        <input type="text" id="q-name" class="form-control" required placeholder="أدخل اسمك الكامل">
+                    </div>
+                    <div class="form-group">
+                        <label>العمر <span class="required">*</span></label>
+                        <input type="number" id="q-age" class="form-control" required min="5" max="100" placeholder="أدخل عمرك">
+                    </div>
+                    <div class="form-group">
+                        <label>رقم التواصل (واتساب) <span class="required">*</span></label>
+                        <input type="tel" id="q-phone" class="form-control" required placeholder="مثال: 01xxxxxxxxx">
+                    </div>
+                    <div class="form-group">
+                        <label>النوع <span class="required">*</span></label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="q-male" name="q-gender" value="ذكر" required>
+                                <label for="q-male"><i class="fas fa-mars"></i> ذكر</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="q-female" name="q-gender" value="أنثى" required>
+                                <label for="q-female"><i class="fas fa-venus"></i> أنثى</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>القراءة المطلوبة <span class="required">*</span></label>
+                        <select id="q-reading" class="form-control" required>
+                            <option value="">اختر القراءة</option>
+                            <optgroup label="القراءات عن نافع">
+                                <option value="قالون عن نافع">قالون عن نافع</option>
+                                <option value="ورش عن نافع">ورش عن نافع</option>
+                            </optgroup>
+                            <optgroup label="القراءات عن ابن كثير">
+                                <option value="البزي عن ابن كثير">البزي عن ابن كثير</option>
+                                <option value="قنبل عن ابن كثير"> قنبل عن ابن كثير</option>
+                            </optgroup>
+                            <optgroup label="القراءات عن أبي عمرو">
+                                <option value="الدوري عن أبي عمرو">الدوري عن أبي عمرو</option>
+                                <option value="السوسي عن أبي عمرو">السوسي عن أبي عمرو</option>
+                            </optgroup>
+                            <optgroup label="القراءات عن ابن عامر">
+                                <option value="هشام عن ابن عامر">هشام عن ابن عامر</option>
+                                <option value="ابن ذكوان عن ابن عامر">ابن ذكوان عن ابن عامر</option>
+                            </optgroup>
+                            <optgroup label="القراءات عن عاصم">
+                                <option value="شعبة عن عاصم">شعبة عن عاصم</option>
+                                <option value="حفص عن عاصم">حفص عن عاصم</option>
+                            </optgroup>
+                            <optgroup label="القراءات عن حمزة">
+                                <option value="خلف عن حمزة">خلف عن حمزة</option>
+                                <option value="خلاد عن حمزة">خلاد عن حمزة</option>
+                            </optgroup>
+                            <optgroup label="القراءات عن الكسائي">
+                                <option value="الدوري عن الكسائي">الدوري عن الكسائي</option>
+                                <option value="الليث عن الكسائي">الليث عن الكسائي</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>المستوى <span class="required">*</span></label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="q-beginner" name="q-level" value="مبتدئ" required>
+                                <label for="q-beginner">مبتدئ</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="q-intermediate" name="q-level" value="متوسط" required>
+                                <label for="q-intermediate">متوسط</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="q-advanced" name="q-level" value="متقدم" required>
+                                <label for="q-advanced">متقدم</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>ملاحظات إضافية</label>
+                        <textarea id="q-notes" class="form-control" placeholder="أي ملاحظات تود إضافتها..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">
+                        <i class="fab fa-whatsapp"></i>
+                        إرسال عبر الواتساب
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Program 2: Hifz & Tajweed -->
+<section class="program-section" id="hifz">
+    <div class="container">
+        <div class="program-details">
+            <div class="program-info">
+                <h2><i class="fas fa-book-open"></i> برنامج حفظ وتجويد</h2>
+                <p>
+                    برنامج متكامل لحفظ القرآن الكريم كاملاً مع إتقان قواعد التجويد وأحكام التلاوة. يعتمد البرنامج على منهج علمي متدرج يساعد الطالب على الحفظ المتقن مع مراعاة الفروق الفردية بين الطلاب.
+                </p>
+                <ul class="program-features">
+                    <li>حفظ القرآن الكريم كاملاً بطريقة متقنة</li>
+                    <li>دراسة شاملة لأحكام التجويد نظرياً وتطبيقياً</li>
+                    <li>مراجعة دورية لضمان تثبيت الحفظ</li>
+                    <li>معلمون مؤهلون في الحفظ والتجويد</li>
+                    <li>منهج يناسب جميع الأعمار والمستويات</li>
+                    <li>مواعيد مرنة تناسب ظروف كل طالب</li>
+                </ul>
+            </div>
+            
+            <div class="registration-form">
+                <h3>سجل في برنامج حفظ وتجويد</h3>
+                <p class="form-subtitle">املأ البيانات وسيتم التواصل معك عبر الواتساب</p>
+                <form id="hifzForm">
+                    <div class="form-group">
+                        <label>الاسم الكامل <span class="required">*</span></label>
+                        <input type="text" id="h-name" class="form-control" required placeholder="أدخل اسمك الكامل">
+                    </div>
+                    <div class="form-group">
+                        <label>العمر <span class="required">*</span></label>
+                        <input type="number" id="h-age" class="form-control" required min="5" max="100" placeholder="أدخل عمرك">
+                    </div>
+                    <div class="form-group">
+                        <label>رقم التواصل (واتساب) <span class="required">*</span></label>
+                        <input type="tel" id="h-phone" class="form-control" required placeholder="مثال: 01xxxxxxxxx">
+                    </div>
+                    <div class="form-group">
+                        <label>النوع <span class="required">*</span></label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="h-male" name="h-gender" value="ذكر" required>
+                                <label for="h-male"><i class="fas fa-mars"></i> ذكر</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="h-female" name="h-gender" value="أنثى" required>
+                                <label for="h-female"><i class="fas fa-venus"></i> أنثى</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>المستوى <span class="required">*</span></label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="h-beginner" name="h-level" value="مبتدئ" required>
+                                <label for="h-beginner">مبتدئ</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="h-intermediate" name="h-level" value="متوسط" required>
+                                <label for="h-intermediate">متوسط</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="h-advanced" name="h-level" value="متقدم" required>
+                                <label for="h-advanced">متقدم</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>ملاحظات إضافية</label>
+                        <textarea id="h-notes" class="form-control" placeholder="أي ملاحظات تود إضافتها..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">
+                        <i class="fab fa-whatsapp"></i>
+                        إرسال عبر الواتساب
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Program 3: Noor Al-Bayan -->
+<section class="program-section" id="noor">
+    <div class="container">
+        <div class="program-details">
+            <div class="program-info">
+                <h2><i class="fas fa-child"></i> برنامج نور البيان</h2>
+                <p>
+                    برنامج متخصص لتعليم الأطفال القراءة والكتابة من خلال منهج "نور البيان"، الذي يُعد من أفضل المناهج لتعليم اللغة العربية والقرآن الكريم للأطفال. يعتمد البرنامج على أساليب تعليمية تفاعلية ممتعة تناسب عمر الطفل.
+                </p>
+                <ul class="program-features">
+                    <li>تعليم القراءة والكتابة للأطفال</li>
+                    <li>منهج نور البيان المعتمد</li>
+                    <li>أساليب تعليمية تفاعلية وممتعة</li>
+                    <li>معلمون متخصصون في تعليم الأطفال</li>
+                    <li>متابعة دورية لأولياء الأمور</li>
+                    <li>بيئة تعليمية آمنة ومشجعة</li>
+                </ul>
+            </div>
+            
+            <div class="registration-form">
+                <h3>سجل في برنامج نور البيان</h3>
+                <p class="form-subtitle">املأ البيانات وسيتم التواصل معك عبر الواتساب</p>
+                <form id="noorForm">
+                    <div class="form-group">
+                        <label>الاسم الكامل <span class="required">*</span></label>
+                        <input type="text" id="n-name" class="form-control" required placeholder="أدخل اسم الطفل">
+                    </div>
+                    <div class="form-group">
+                        <label>العمر <span class="required">*</span></label>
+                        <input type="number" id="n-age" class="form-control" required min="3" max="15" placeholder="أدخل عمر الطفل">
+                    </div>
+                    <div class="form-group">
+                        <label>رقم التواصل (واتساب) <span class="required">*</span></label>
+                        <input type="tel" id="n-phone" class="form-control" required placeholder="رقم ولي الأمر">
+                    </div>
+                    <div class="form-group">
+                        <label>النوع <span class="required">*</span></label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="n-male" name="n-gender" value="ذكر" required>
+                                <label for="n-male"><i class="fas fa-mars"></i> ذكر</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="n-female" name="n-gender" value="أنثى" required>
+                                <label for="n-female"><i class="fas fa-venus"></i> أنثى</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>المستوى <span class="required">*</span></label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="n-beginner" name="n-level" value="مبتدئ" required>
+                                <label for="n-beginner">مبتدئ</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="n-intermediate" name="n-level" value="متوسط" required>
+                                <label for="n-intermediate">متوسط</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="n-advanced" name="n-level" value="متقدم" required>
+                                <label for="n-advanced">متقدم</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>ملاحظات إضافية</label>
+                        <textarea id="n-notes" class="form-control" placeholder="أي ملاحظات تود إضافتها..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">
+                        <i class="fab fa-whatsapp"></i>
+                        إرسال عبر الواتساب
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Program 4: Intensive -->
+<section class="program-section" id="intensive">
+    <div class="container">
+        <div class="program-details">
+            <div class="program-info">
+                <h2><i class="fas fa-bolt"></i> البرنامج المكثف</h2>
+                <p>
+                    برنامج مكثف لحفظ القرآن الكريم في أسرع وقت ممكن، موجه للجادين والملتزمين الذين يرغبون في إتمام حفظ القرآن خلال فترة زمنية قصيرة. يعتمد البرنامج على جدول مكثف ومتابعة يومية مع معلمين متخصصين.
+                </p>
+                <ul class="program-features">
+                    <li>حفظ القرآن في وقت قياسي</li>
+                    <li>جدول مكثف ومنظم يومياً</li>
+                    <li>متابعة يومية مع المعلم</li>
+                    <li>منهج علمي مجرب للحفظ السريع</li>
+                    <li>اختبارات دورية لقياس التقدم</li>
+                    <li>دعم نفسي وتحفيزي مستمر</li>
+                </ul>
+            </div>
+            
+            <div class="registration-form">
+                <h3>سجل في البرنامج المكثف</h3>
+                <p class="form-subtitle">املأ البيانات وسيتم التواصل معك عبر الواتساب</p>
+                <form id="intensiveForm">
+                    <div class="form-group">
+                        <label>الاسم الكامل <span class="required">*</span></label>
+                        <input type="text" id="i-name" class="form-control" required placeholder="أدخل اسمك الكامل">
+                    </div>
+                    <div class="form-group">
+                        <label>العمر <span class="required">*</span></label>
+                        <input type="number" id="i-age" class="form-control" required min="5" max="100" placeholder="أدخل عمرك">
+                    </div>
+                    <div class="form-group">
+                        <label>رقم التواصل (واتساب) <span class="r

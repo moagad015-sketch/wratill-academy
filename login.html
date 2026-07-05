@@ -1,0 +1,190 @@
+<antml:writeToFile path="login.html">
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="تسجيل الدخول وإنشاء حساب جديد في أكاديمية ورتل">
+    <title>تسجيل الدخول | أكاديمية ورتل</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="header-content">
+            <div class="logo-section">
+                <div class="logo">
+                    <i class="fas fa-quran logo-icon"></i>
+                    <div class="logo-text">
+                        <h1>أكاديمية ورتل</h1>
+                        <p class="supervision">تحت إشراف الشيخ محمد بن جاد</p>
+                    </div>
+                </div>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">عن الأكاديمية</a></li>
+                    <li><a href="programs.html">البرامج التعليمية</a></li>
+                    <li><a href="pricing.html">الباقات والأسعار</a></li>
+                    <li><a href="teachers.html">انضم كمعلم</a></li>
+                    <li><a href="login.html" class="active">تسجيل الدخول</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+        </div>
+    </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+    <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="about.html">عن الأكاديمية</a></li>
+        <li><a href="programs.html">البرامج التعليمية</a></li>
+        <li><a href="pricing.html">الباقات والأسعار</a></li>
+        <li><a href="teachers.html">انضم كمعلم</a></li>
+        <li><a href="login.html" class="active">تسجيل الدخول</a></li>
+    </ul>
+</div>
+
+<!-- Login Section -->
+<section class="login-section">
+    <div class="container">
+        <div class="login-container">
+            <div class="login-header">
+                <div class="login-icon">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <h2>مرحباً بك في أكاديمية ورتل</h2>
+                <p>سجل دخولك أو أنشئ حساباً جديداً</p>
+            </div>
+            
+            <div class="login-tabs">
+                <button class="login-tab active" data-target="login-form">تسجيل الدخول</button>
+                <button class="login-tab" data-target="register-form">إنشاء حساب</button>
+            </div>
+            
+            <!-- Login Form -->
+            <form class="login-form active" id="login-form">
+                <div class="form-group">
+                    <label>البريد الإلكتروني أو رقم الهاتف</label>
+                    <input type="text" class="form-control" required placeholder="أدخل البريد أو رقم الهاتف">
+                </div>
+                <div class="form-group">
+                    <label>كلمة المرور</label>
+                    <input type="password" class="form-control" required placeholder="أدخل كلمة المرور">
+                </div>
+                <button type="submit" class="btn-submit" id="loginForm">
+                    <i class="fas fa-sign-in-alt"></i>
+                    تسجيل الدخول
+                </button>
+                <div class="form-footer">
+                    <a href="https://wa.me/201515404370" target="_blank">نسيت كلمة المرور؟</a>
+                </div>
+            </form>
+            
+            <!-- Register Form -->
+            <form class="login-form" id="register-form">
+                <form id="registerForm">
+                    <div class="form-group">
+                        <label>الاسم الكامل <span class="required">*</span></label>
+                        <input type="text" id="reg-name" class="form-control" required placeholder="أدخل اسمك الكامل">
+                    </div>
+                    <div class="form-group">
+                        <label>البريد الإلكتروني <span class="required">*</span></label>
+                        <input type="email" id="reg-email" class="form-control" required placeholder="example@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label>رقم الهاتف (واتساب) <span class="required">*</span></label>
+                        <input type="tel" class="form-control" required placeholder="مثال: 01xxxxxxxxx">
+                    </div>
+                    <div class="form-group">
+                        <label>كلمة المرور <span class="required">*</span></label>
+                        <input type="password" id="reg-password" class="form-control" required placeholder="أدخل كلمة مرور قوية">
+                    </div>
+                    <div class="form-group">
+                        <label>نوع الحساب <span class="required">*</span></label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="reg-student" name="reg-type" value="طالب" required>
+                                <label for="reg-student"><i class="fas fa-user-graduate"></i> طالب</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="reg-parent" name="reg-type" value="ولي أمر" required>
+                                <label for="reg-parent"><i class="fas fa-users"></i> ولي أمر</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-submit" id="registerForm">
+                        <i class="fab fa-whatsapp"></i>
+                        إنشاء الحساب عبر الواتساب
+                    </button>
+                </form>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <i class="fas fa-quran"></i>
+                    <h3>أكاديمية ورتل</h3>
+                </div>
+                <p>منصة تعليمية رقمية متخصصة في علوم القرآن والقراءات تحت إشراف الشيخ محمد بن جاد</p>
+            </div>
+            <div class="footer-col">
+                <h4>روابط سريعة</h4>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">عن الأكاديمية</a></li>
+                    <li><a href="programs.html">البرامج التعليمية</a></li>
+                    <li><a href="pricing.html">الباقات والأسعار</a></li>
+                    <li><a href="teachers.html">انضم كمعلم</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>تواصل معنا</h4>
+                <ul class="contact-list">
+                    <li><i class="fab fa-whatsapp"></i><a href="https://wa.me/201515404370" target="_blank">01515404370</a></li>
+                    <li><i class="fab fa-facebook"></i><a href="https://www.facebook.com/share/1BrhBwDvJB/" target="_blank">فيسبوك</a></li>
+                    <li><i class="fab fa-instagram"></i><a href="https://www.instagram.com/moh.1592009?igsh=MTA0dWN1Z3JuOHJsNQ==" target="_blank">إنستجرام</a></li>
+                    <li><i class="fab fa-telegram"></i><a href="https://t.me/mohamedgad213" target="_blank">تليجرام</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>ساعات العمل</h4>
+                <p>متاحون على مدار الساعة لخدمتكم عبر الواتساب</p>
+                <div class="social-icons">
+                    <a href="https://wa.me/201515404370" target="_blank" class="social-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/share/1BrhBwDvJB/" target="_blank" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/moh.1592009?igsh=MTA0dWN1Z3JuOHJsNQ==" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://t.me/mohamedgad213" target="_blank" class="social-icon telegram"><i class="fab fa-telegram-plane"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 أكاديمية ورتل. جميع الحقوق محفوظة | تحت إشراف الشيخ محمد بن جاد</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/201515404370" target="_blank" class="whatsapp-float" title="تواصل معنا">
+    <i class="fab fa-whatsapp"></i>
+    <span class="pulse"></span>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
+</antml:writeToFile>

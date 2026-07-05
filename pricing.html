@@ -1,0 +1,333 @@
+<antml:writeToFile path="pricing.html">
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="باقات وأسعار أكاديمية ورتل - باقات مرنة تناسب الجميع بأسعار تنافسية">
+    <title>الباقات والأسعار | أكاديمية ورتل</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="header-content">
+            <div class="logo-section">
+                <div class="logo">
+                    <i class="fas fa-quran logo-icon"></i>
+                    <div class="logo-text">
+                        <h1>أكاديمية ورتل</h1>
+                        <p class="supervision">تحت إشراف الشيخ محمد بن جاد</p>
+                    </div>
+                </div>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">عن الأكاديمية</a></li>
+                    <li><a href="programs.html">البرامج التعليمية</a></li>
+                    <li><a href="pricing.html" class="active">الباقات والأسعار</a></li>
+                    <li><a href="teachers.html">انضم كمعلم</a></li>
+                    <li><a href="login.html">تسجيل الدخول</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+        </div>
+    </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+    <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="about.html">عن الأكاديمية</a></li>
+        <li><a href="programs.html">البرامج التعليمية</a></li>
+        <li><a href="pricing.html" class="active">الباقات والأسعار</a></li>
+        <li><a href="teachers.html">انضم كمعلم</a></li>
+        <li><a href="login.html">تسجيل الدخول</a></li>
+    </ul>
+</div>
+
+<!-- Pricing Hero -->
+<section class="pricing-hero">
+    <div class="container">
+        <h1>الباقات والأسعار</h1>
+        <p>باقات مرنة تناسب احتياجاتك وميزانيتك، اختر ما يناسبك وابدأ رحلتك مع كتاب الله</p>
+    </div>
+</section>
+
+<!-- Pricing Section -->
+<section class="pricing-section">
+    <div class="container">
+        <div class="pricing-tabs">
+            <button class="tab-btn active" data-target="egypt-table">
+                <i class="fas fa-flag"></i> للمصريين
+            </button>
+            <button class="tab-btn" data-target="foreign-table">
+                <i class="fas fa-globe"></i> للأجانب
+            </button>
+        </div>
+        
+        <!-- Egypt Table -->
+        <div class="pricing-table-wrapper" id="egypt-table">
+            <table class="pricing-table">
+                <thead>
+                    <tr>
+                        <th>عدد الحصص شهرياً</th>
+                        <th>السعر بالجنيه المصري</th>
+                        <th>سعر الساعة</th>
+                        <th>الاشتراك</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>4 حصص</strong></td>
+                        <td class="price">200 <span class="currency">جنيهاً</span></td>
+                        <td>50 جنيهاً</td>
+                        <td>
+                            <button class="btn btn-whatsapp subscribe-btn" 
+                                    data-package="4 حصص - للمصريين" 
+                                    data-price="200 جنيه مصري">
+                                <i class="fab fa-whatsapp"></i> اشترك الآن
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>8 حصص</strong></td>
+                        <td class="price">400 <span class="currency">جنيهاً</span></td>
+                        <td>50 جنيهاً</td>
+                        <td>
+                            <button class="btn btn-whatsapp subscribe-btn" 
+                                    data-package="8 حصص - للمصريين" 
+                                    data-price="400 جنيه مصري">
+                                <i class="fab fa-whatsapp"></i> اشترك الآن
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>12 حصة</strong></td>
+                        <td class="price">550 <span class="currency">جنيهاً</span></td>
+                        <td>~46 جنيهاً</td>
+                        <td>
+                            <button class="btn btn-whatsapp subscribe-btn" 
+                                    data-package="12 حصة - للمصريين" 
+                                    data-price="550 جنيه مصري">
+                                <i class="fab fa-whatsapp"></i> اشترك الآن
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>16 حصة</strong></td>
+                        <td class="price">750 <span class="currency">جنيهاً</span></td>
+                        <td>~47 جنيهاً</td>
+                        <td>
+                            <button class="btn btn-whatsapp subscribe-btn" 
+                                    data-package="16 حصة - للمصريين" 
+                                    data-price="750 جنيه مصري">
+                                <i class="fab fa-whatsapp"></i> اشترك الآن
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- Foreign Table -->
+        <div class="pricing-table-wrapper" id="foreign-table" style="display: none;">
+            <table class="pricing-table">
+                <thead>
+                    <tr>
+                        <th>عدد الحصص شهرياً</th>
+                        <th>السعر بالدولار</th>
+                        <th>سعر الساعة</th>
+                        <th>الاشتراك</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>4 حصص</strong></td>
+                        <td class="price">16 <span class="currency">دولاراً</span></td>
+                        <td>4 دولارات</td>
+                        <td>
+                            <button class="btn btn-whatsapp subscribe-btn" 
+                                    data-package="4 حصص - للأجانب" 
+                                    data-price="16 دولار أمريكي">
+                                <i class="fab fa-whatsapp"></i> اشترك الآن
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>8 حصص</strong></td>
+                        <td class="price">32 <span class="currency">دولاراً</span></td>
+                        <td>4 دولارات</td>
+                        <td>
+                            <button class="btn btn-whatsapp subscribe-btn" 
+                                    data-package="8 حصص - للأجانب" 
+                                    data-price="32 دولار أمريكي">
+                                <i class="fab fa-whatsapp"></i> اشترك الآن
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>12 حصة</strong></td>
+                        <td class="price">48 <span class="currency">دولاراً</span></td>
+                        <td>4 دولارات</td>
+                        <td>
+                            <button class="btn btn-whatsapp subscribe-btn" 
+                                    data-package="12 حصة - للأجانب" 
+                                    data-price="48 دولار أمريكي">
+                                <i class="fab fa-whatsapp"></i> اشترك الآن
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>16 حصة</strong></td>
+                        <td class="price">64 <span class="currency">دولاراً</span></td>
+                        <td>4 دولارات</td>
+                        <td>
+                            <button class="btn btn-whatsapp subscribe-btn" 
+                                    data-package="16 حصة - للأجانب" 
+                                    data-price="64 دولار أمريكي">
+                                <i class="fab fa-whatsapp"></i> اشترك الآن
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- Gulf Package -->
+        <div class="gulf-package">
+            <h3><i class="fas fa-star-and-crescent"></i> باقة دول الخليج العربي</h3>
+            <p>عملاؤنا الكرام في دول الخليج، للحصول على تفاصيل الباقات والأسعار الخاصة بكم، يرجى التواصل معنا عبر الواتساب مع تحديد الدولة</p>
+            
+            <div class="gulf-countries">
+                <button class="btn btn-gold gulf-country-btn" data-country="السعودية">
+                    <i class="fas fa-flag"></i> السعودية
+                </button>
+                <button class="btn btn-gold gulf-country-btn" data-country="الإمارات">
+                    <i class="fas fa-flag"></i> الإمارات
+                </button>
+                <button class="btn btn-gold gulf-country-btn" data-country="الكويت">
+                    <i class="fas fa-flag"></i> الكويت
+                </button>
+                <button class="btn btn-gold gulf-country-btn" data-country="قطر">
+                    <i class="fas fa-flag"></i> قطر
+                </button>
+                <button class="btn btn-gold gulf-country-btn" data-country="البحرين">
+                    <i class="fas fa-flag"></i> البحرين
+                </button>
+                <button class="btn btn-gold gulf-country-btn" data-country="عمان">
+                    <i class="fas fa-flag"></i> عمان
+                </button>
+            </div>
+            
+            <a href="https://wa.me/201515404370?text=مرحباً،%20أرغب%20في%20معرفة%20باقات%20دول%20الخليج" 
+               target="_blank" 
+               class="btn btn-whatsapp btn-large">
+                <i class="fab fa-whatsapp"></i>
+                تواصل معنا عبر الواتساب
+            </a>
+        </div>
+        
+        <!-- Features -->
+        <div class="section-header" style="margin-top: 80px;">
+            <span class="section-badge">ماذا تحصل</span>
+            <h2 class="section-title">مميزات الاشتراك</h2>
+        </div>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-user-graduate"></i>
+                </div>
+                <h3>معلم خاص</h3>
+                <p>معلم حافظ مجاز مخصص لك فقط</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h3>مواعيد مرنة</h3>
+                <p>اختر المواعيد التي تناسب جدولك</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>متابعة مستمرة</h3>
+                <p>تقارير دورية عن مستواك وتقدمك</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <h3>شهادة إجازة</h3>
+                <p>شهادة معتمدة عند إتمام البرنامج</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <i class="fas fa-quran"></i>
+                    <h3>أكاديمية ورتل</h3>
+                </div>
+                <p>منصة تعليمية رقمية متخصصة في علوم القرآن والقراءات تحت إشراف الشيخ محمد بن جاد</p>
+            </div>
+            <div class="footer-col">
+                <h4>روابط سريعة</h4>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">عن الأكاديمية</a></li>
+                    <li><a href="programs.html">البرامج التعليمية</a></li>
+                    <li><a href="pricing.html">الباقات والأسعار</a></li>
+                    <li><a href="teachers.html">انضم كمعلم</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>تواصل معنا</h4>
+                <ul class="contact-list">
+                    <li><i class="fab fa-whatsapp"></i><a href="https://wa.me/201515404370" target="_blank">01515404370</a></li>
+                    <li><i class="fab fa-facebook"></i><a href="https://www.facebook.com/share/1BrhBwDvJB/" target="_blank">فيسبوك</a></li>
+                    <li><i class="fab fa-instagram"></i><a href="https://www.instagram.com/moh.1592009?igsh=MTA0dWN1Z3JuOHJsNQ==" target="_blank">إنستجرام</a></li>
+                    <li><i class="fab fa-telegram"></i><a href="https://t.me/mohamedgad213" target="_blank">تليجرام</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>ساعات العمل</h4>
+                <p>متاحون على مدار الساعة لخدمتكم عبر الواتساب</p>
+                <div class="social-icons">
+                    <a href="https://wa.me/201515404370" target="_blank" class="social-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/share/1BrhBwDvJB/" target="_blank" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/moh.1592009?igsh=MTA0dWN1Z3JuOHJsNQ==" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://t.me/mohamedgad213" target="_blank" class="social-icon telegram"><i class="fab fa-telegram-plane"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 أكاديمية ورتل. جميع الحقوق محفوظة | تحت إشراف الشيخ محمد بن جاد</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/201515404370" target="_blank" class="whatsapp-float" title="تواصل معنا">
+    <i class="fab fa-whatsapp"></i>
+    <span class="pulse"></span>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
+</antml:writeToFile>

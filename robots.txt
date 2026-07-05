@@ -1,0 +1,15 @@
+<antml:writeToFile path="robots.txt">
+User-agent: *
+Allow: /
+Sitemap: https://wartal-academy.com/sitemap.xml
+
+# Allow all crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+</antml:writeToFile>
